@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item text-blue-100">
     <i>
       <slot name="icon"></slot>
     </i>

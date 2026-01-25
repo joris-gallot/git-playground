@@ -4,9 +4,17 @@ defineProps<{
 }>()
 </script>
 
+asdasd
+asd
 <template>
   <div class="greetings">
-    <h1 class="green text-green-500">{{ msg }}</h1>
+    <h1 class="sgreen tesdxssasddddast-green-500">{{ msg }}</h1>asdsssddddsssasdsda
+ssssasdads
+dasdsddsddsssadsadasddsassasdasd
+ss
+ssddsadsadsadsadsad
+asd
+sadasd
     <h3>
       You’ve successfully created a project with
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. +

@@ -1,5 +1,3 @@
 /// <reference types="vite/client" />
 
-
-
-wsdasdasd
+console.log('Hello, Git Playground!')

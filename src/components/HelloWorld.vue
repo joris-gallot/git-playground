@@ -1,14 +1,13 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
 </script>
 
 asdasd
-asd
+test
+
+
 <template>
   <div class="greetings">
-    <h1 class="sgreen tesdxssasddddast-green-500">{{ msg }}</h1>asdsssddddsssasdsda
+    <h1 class="sgreen tesdxssasddddast-green-500">{{ msg }}</h1>asdssadsdassddddsssasdsdaasdsadqwd
 ssssasdads
 dasdsddsddsssadsadasddsassasdasd
 ss

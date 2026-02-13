@@ -1,19 +1,12 @@
 <script setup lang="ts">
+const props = defineProps<{
+  msg: string
+}>()
 </script>
-
-asdasd
-test
-
-
+sad
 <template>
   <div class="greetings">
     <h1 class="sgreen tesdxssasddddast-green-500">{{ msg }}</h1>asdssadsdassddddsssasdsdaasdsadqwd
-ssssasdads
-dasdsddsddsssadsadasddsassasdasd
-ss
-ssddsadsadsadsadsad
-asd
-sadasd
     <h3>
       You’ve successfully created a project with
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. +

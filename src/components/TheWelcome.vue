@@ -2,9 +2,17 @@
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
+import EcosystemIcon from './icons/IconEcosystem.vue'    
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+
+console.log('TheWelcome component loaded')
+
+sdkljsadasd
+lkasjdlkasdjlkasd
+
+
+const link = "https://www.cypress.io/"
 
 const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 </script>
@@ -36,7 +44,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
     you need to test your bycicle and web pages, check out
     <a href="https://vitest.dev/" target="_blank" rel="noopener">Vitest</a>
     and
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a>
+    <a :href="link" target="_blank" rel="noopener">Cypress</a>
     /
     <a href="https://playwright.dev/" target="_blank" rel="noopener">Playwright</a>.
 

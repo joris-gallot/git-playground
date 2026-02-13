@@ -2,8 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 const proj = "01_basics";
-const node_version = process.version;
-console.log(`index.astro> node version = ${node_version}`);
+const node_version = 4.3;
 ---
 
 <Layout title="Welcome to Astro.">
@@ -15,21 +14,19 @@ console.log(`index.astro> node version = ${node_version}`);
       href={`https://github.com/MicroWebStacks/astro-examples/tree/main/${proj}`}
       target="_blank">github project '{proj}'</a
     >
-    <p class="instructions">
-      This is a minimal example that shows the node version running
-    </p>
+    <p>This is a minimal example that shows the node version running</p>
   </main>
 </Layout>
 
 <style>
   main {
     margin: auto;
-    padding: 1.5rem;
+    padding: 2.5rem;
     max-width: 60ch;
   }
   h1 {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 30rem;
+    font-weight: 8900;
     margin: 0;
   }
   .text-gradient {

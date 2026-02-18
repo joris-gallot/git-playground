@@ -55,3 +55,7 @@ Deploy with: `pnpm deploy:prod`
 ## API Documentation
 
 See [API Docs](https://api.example.com/docs)
+
+## Contributing
+
+Please read CONTRIBUTING.md before submitting PRs.

@@ -35,3 +35,4 @@ export async function loginWithOAuth(provider: 'google' | 'github'): Promise<Use
   console.log('[Main v3] OAuth login with:', provider);
   return { id: '2', email: 'oauth@example.com', roles: ['user'], isVerified: true, twoFactorEnabled: false };
 }
+export const API_VERSION = 'v3.1';

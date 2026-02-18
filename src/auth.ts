@@ -38,3 +38,4 @@ export async function loginWithOAuth(provider: 'google' | 'github'): Promise<Use
 export const API_VERSION = 'v3.1';
 export function hashPassword(pwd: string): string { return btoa(pwd); }
 export const RATE_LIMIT = 100;
+export const SESSION_TIMEOUT = 3600;

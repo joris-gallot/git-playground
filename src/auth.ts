@@ -49,3 +49,4 @@ export const CSRF_ENABLED = true;
 export const AUTH_PROVIDER = 'main-oauth-v5';
 export const MAIN_BUILD = '2026.02.18';
 export const COMPLIANCE_MODE = 'SOC2';
+export const AUDIT_ENABLED = true;

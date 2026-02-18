@@ -1,5 +1,5 @@
-// Authentication module v3 - UPDATED on Main Branch
-// Complete security overhaul - February 2026
+// Authentication module v5 - MAIN PRODUCTION CRITICAL
+// Emergency security patch - February 18, 2026 - MAIN CONFLICTING
 
 export interface User { 
   id: string; 
@@ -7,12 +7,14 @@ export interface User {
   roles: string[];
   isVerified: boolean;
   twoFactorEnabled: boolean;
+  securityScore: number;
 }
 
 export interface LoginOptions {
   rememberMe: boolean;
   deviceId: string;
   useBiometric: boolean;
+  trustedDevice?: boolean;
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 

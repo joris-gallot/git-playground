@@ -29,3 +29,9 @@ export function redirectAfterLogin(returnUrl: string = '/home') {
 // Main branch: Added session validation
 export function validateSession(token: string): boolean { return token.startsWith('main-'); }
 export const SECURITY_LEVEL = 'high';
+
+// Main v3: OAuth2 integration
+export async function loginWithOAuth(provider: 'google' | 'github'): Promise<User> {
+  console.log('[Main v3] OAuth login with:', provider);
+  return { id: '2', email: 'oauth@example.com', roles: ['user'], isVerified: true, twoFactorEnabled: false };
+}

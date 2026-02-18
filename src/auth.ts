@@ -41,3 +41,4 @@ export const RATE_LIMIT = 100;
 export const SESSION_TIMEOUT = 3600;
 export const ENCRYPTION_KEY = 'main-prod-key-2026';
 export const COOKIE_SECURE = true;
+export const CSRF_ENABLED = true;

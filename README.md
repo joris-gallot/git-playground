@@ -51,3 +51,7 @@ Deploy with: `pnpm deploy:prod`
 - SOC2 Type II certified
 - GDPR compliant
 - ISO 27001 ready
+
+## API Documentation
+
+See [API Docs](https://api.example.com/docs)

@@ -3,20 +3,23 @@ const props = defineProps<{
   msg: string
 }>()
 
-// Main branch v2: Enhanced with animations and transitions
-import { ref, watch, onMounted } from 'vue'
+// Main branch v3: CONFLICTING - Added dark mode and theme support
+import { ref, watch, onMounted, computed } from 'vue'
 const displayMessage = ref('')
 const isAnimating = ref(true)
+const isDarkMode = ref(false)
+const themeClass = computed(() => isDarkMode.value ? 'dark-theme' : 'light-theme')
 
 onMounted(() => {
-  displayMessage.value = `✨ ${props.msg.toUpperCase()} ✨`
-  setTimeout(() => isAnimating.value = false, 1000)
+  displayMessage.value = `🌟 ${props.msg.toUpperCase()} 🌟`
+  setTimeout(() => isAnimating.value = false, 500)
+  isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches
 })
 </script>
 
 <template>
-  <div class="greetings main-v2-layout" :class="{ 'animating': isAnimating }">
-    <h1 class="main-v2-title text-indigo-700">{{ displayMessage }}</h1>
+  <div class="greetings main-v3-dark-mode" :class="[themeClass, { 'animating': isAnimating }]">
+    <h1 class="main-v3-title text-emerald-600">{{ displayMessage }}</h1>
     <h3>
       You’ve successfully created a project with
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. +

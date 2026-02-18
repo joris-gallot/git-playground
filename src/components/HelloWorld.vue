@@ -2,11 +2,15 @@
 const props = defineProps<{
   msg: string
 }>()
+
+// Main branch: Added reactive message transformation
+import { ref, watch } from 'vue'
+const displayMessage = ref(props.msg.toUpperCase())
 </script>
-sad
+
 <template>
-  <div class="greetings">
-    <h1 class="sgreen tesdxssasddddast-green-500">{{ msg }}</h1>asdssadsdassddddsssasdsdaasdsadqwd
+  <div class="greetings main-branch-layout">
+    <h1 class="main-title text-blue-600">{{ displayMessage }}</h1>
     <h3>
       You’ve successfully created a project with
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. +

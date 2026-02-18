@@ -1,6 +1,13 @@
-# test-git
+# Git Playground - Main Branch
 
-This template should not help get you started developing with Vue 3 in Vite.
+> ⚡ This is the MAIN BRANCH (Production) version
+
+This is the official production-ready Vue 3 + Vite template.
+
+## Production Features
+- Secure authentication v2
+- Role-based access control
+- Device verification
 
 ## Recommended IDE Setup
 
@@ -8,9 +15,9 @@ This template should not help get you started developing with Vue 3 in Vite.
 
 ## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type informationasd for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need to test [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. Use [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) in your editor for proper `.vue` type support.
 
-## Customize configuration
+## Main Branch Configuration
 
 sad
 See [Vite Configuration Reference](https://vite.dev/config/).

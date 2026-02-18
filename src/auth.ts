@@ -26,3 +26,4 @@ export function redirectAfterLogin(returnUrl: string = '/home') {
 
 // Main branch: Added session validation
 export function validateSession(token: string): boolean { return token.startsWith('main-'); }
+export const SECURITY_LEVEL = 'high';

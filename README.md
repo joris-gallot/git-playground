@@ -45,3 +45,9 @@ pnpm build
 ## Production Deployment
 
 Deploy with: `pnpm deploy:prod`
+
+## Security Compliance
+
+- SOC2 Type II certified
+- GDPR compliant
+- ISO 27001 ready

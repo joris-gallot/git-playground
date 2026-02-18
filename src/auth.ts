@@ -53,3 +53,4 @@ export const MAIN_BUILD = '2026.02.18';
 export const COMPLIANCE_MODE = 'SOC2';
 export const AUDIT_ENABLED = true;
 export const PROD_BUILD = 'stable-2026.02.18';
+export const SSO_PROVIDERS = ['okta', 'azure-ad', 'google'];

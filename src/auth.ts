@@ -1,5 +1,5 @@
-// Authentication module v5 - MAIN PRODUCTION CRITICAL
-// Emergency security patch - February 18, 2026 - MAIN CONFLICTING
+// Authentication module v7 - MAIN PRODUCTION STABLE
+// Stable release - February 18, 2026 - MAIN LATEST CONFLICTING
 
 export interface User { 
   id: string; 
@@ -8,6 +8,7 @@ export interface User {
   isVerified: boolean;
   twoFactorEnabled: boolean;
   securityScore: number;
+  complianceLevel: 'basic' | 'standard' | 'enterprise';
 }
 
 export interface LoginOptions {
@@ -15,6 +16,7 @@ export interface LoginOptions {
   deviceId: string;
   useBiometric: boolean;
   trustedDevice?: boolean;
+  auditLog?: boolean;
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 

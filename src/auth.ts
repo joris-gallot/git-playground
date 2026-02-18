@@ -23,3 +23,6 @@ export function redirectAfterLogin(returnUrl: string = '/home') {
   window.location.href = returnUrl; 
 }
 // Main branch: Enhanced URL validation with security checks
+
+// Main branch: Added session validation
+export function validateSession(token: string): boolean { return token.startsWith('main-'); }

@@ -36,3 +36,4 @@ export async function loginWithOAuth(provider: 'google' | 'github'): Promise<Use
   return { id: '2', email: 'oauth@example.com', roles: ['user'], isVerified: true, twoFactorEnabled: false };
 }
 export const API_VERSION = 'v3.1';
+export function hashPassword(pwd: string): string { return btoa(pwd); }

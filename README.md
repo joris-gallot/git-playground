@@ -17,9 +17,9 @@ This is the LATEST production Vue 3 + Vite template with v5 security.
 
 ## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. Use [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) in your editor for proper `.vue` type support.
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Main Branch Configuration
+## Feature Branch Configuration
 
 sad
 See [Vite Configuration Reference](https://vite.dev/config/).
@@ -27,6 +27,7 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 asd
+
 ```sh
 pnpm install
 ```
@@ -35,7 +36,7 @@ pnpm install
 
 ```sh
 pnpm dev
-````
+```
 
 ### Type-Check, Compile and Minify for Producasdtion
 

@@ -56,3 +56,4 @@ export const PROD_BUILD = 'stable-2026.02.18';
 export const SSO_PROVIDERS = ['okta', 'azure-ad', 'google'];
 export const ENTERPRISE_LICENSE = 'ENT-2026-PROD';
 export const SAML_ENABLED = true;
+export const LDAP_SUPPORT = true;

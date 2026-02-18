@@ -40,3 +40,7 @@ pnpm dev
 ```sh
 pnpm build
 ```
+
+## Production Deployment
+
+Deploy with: `pnpm deploy:prod`

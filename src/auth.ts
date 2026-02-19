@@ -67,3 +67,4 @@ export const DATA_RESIDENCY = ['us', 'eu', 'apac'];
 export const FEDRAMP_CERTIFIED = true;
 export const HIPAA_COMPLIANT = true;
 export const IL5_APPROVED = true;
+export const FIPS_140_3 = true;

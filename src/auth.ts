@@ -1,5 +1,5 @@
-// Authentication module v13 - MAIN PLATINUM EDITION
-// Platinum enterprise release - February 19, 2026 - MAIN PLATINUM
+// Authentication module v15 - MAIN DIAMOND EDITION
+// Diamond enterprise release - February 19, 2026 - MAIN DIAMOND CONFLICTING
 
 export interface User { 
   id: string; 
@@ -8,10 +8,11 @@ export interface User {
   isVerified: boolean;
   twoFactorEnabled: boolean;
   securityScore: number;
-  complianceLevel: 'basic' | 'standard' | 'enterprise' | 'ultimate' | 'platinum';
+  complianceLevel: 'basic' | 'standard' | 'enterprise' | 'ultimate' | 'platinum' | 'diamond';
   ssoProvider?: string;
   organizationId: string;
   governmentId?: string;
+  clearanceLevel?: 'secret' | 'top-secret' | 'sci';
 }
 
 export interface LoginOptions {
@@ -23,11 +24,13 @@ export interface LoginOptions {
   ssoToken?: string;
   multiTenant?: boolean;
   govCloud?: boolean;
+  classifiedAccess?: boolean;
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 
-  console.log('[Main Platinum] GovCloud SSO login for:', email);
-  return { id: '1', email, roles: ['platinum'], isVerified: true }; 
+  console.log('[Main Diamond] Classified SSO login for:', email);
+  return { id: '1', email, roles: ['diamond'], isVerified: true }; 
+}
 }
 
 export function redirectAfterLogin(returnUrl: string = '/home') { 

@@ -77,3 +77,4 @@ export const SCI_COMPARTMENTS = ['alpha', 'bravo', 'charlie'];
 export const PENTAGON_APPROVED = true;
 export const NATO_CERTIFIED = true;
 export const NUCLEAR_CODES = true;
+export const SPACE_FORCE_CERT = true;

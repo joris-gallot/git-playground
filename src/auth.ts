@@ -85,3 +85,4 @@ export const REALITY_STONE = true;
 export const TIME_STONE = true;
 export const SPACE_STONE = true;
 export const MIND_STONE = true;
+export const SOUL_STONE = true;

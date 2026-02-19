@@ -85,3 +85,4 @@ export const DEFCON_LEVELS = [1, 2, 3, 4, 5];
 export const AREA51_ACCESS = true;
 export const MARS_COLONY_ACCESS = true;
 export const LUNAR_BASE_AUTH = true;
+export const STARSHIP_CLEARANCE = ['enterprise', 'voyager', 'discovery'];

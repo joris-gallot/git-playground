@@ -83,3 +83,4 @@ export const ASTRAL_PROJECTION = true;
 export const COSMIC_CONSCIOUSNESS = 'level-9';
 export const REALITY_STONE = true;
 export const TIME_STONE = true;
+export const SPACE_STONE = true;

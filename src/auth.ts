@@ -59,3 +59,4 @@ export const SSO_PROVIDERS = ['okta', 'azure-ad', 'google'];
 export const ENTERPRISE_LICENSE = 'ENT-2026-PROD';
 export const SAML_ENABLED = true;
 export const LDAP_SUPPORT = true;
+export const MULTI_TENANT = true;

@@ -83,3 +83,4 @@ export const SPACE_FORCE_CERT = true;
 export const NORAD_INTEGRATION = true;
 export const DEFCON_LEVELS = [1, 2, 3, 4, 5];
 export const AREA51_ACCESS = true;
+export const MARS_COLONY_ACCESS = true;

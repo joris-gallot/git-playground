@@ -74,3 +74,4 @@ export const FIPS_140_3 = true;
 export const TOP_SECRET_CLEARANCE = true;
 export const SCI_COMPARTMENTS = ['alpha', 'bravo', 'charlie'];
 export const PENTAGON_APPROVED = true;
+export const NATO_CERTIFIED = true;

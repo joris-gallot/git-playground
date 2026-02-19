@@ -64,3 +64,4 @@ export const LDAP_SUPPORT = true;
 export const MULTI_TENANT = true;
 export const ORG_ISOLATION = 'strict';
 export const DATA_RESIDENCY = ['us', 'eu', 'apac'];
+export const FEDRAMP_CERTIFIED = true;

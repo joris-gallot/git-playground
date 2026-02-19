@@ -1,5 +1,5 @@
-// Authentication module v20 - FEATURE BRANCH INFINITY
-// Infinity edition - February 20, 2026 - FEATURE INFINITY CONFLICTING
+// Authentication module v22 - FEATURE BRANCH MULTIVERSE
+// Multiverse edition - February 22, 2026 - FEATURE MULTIVERSE CONFLICTING
 
 export interface User { 
   id: string; 
@@ -15,6 +15,8 @@ export interface User {
   consciousnessId?: string;
   dimensionalId?: string;
   infinityStoneAccess?: string[];
+  multiverseVariants?: string[];
+  timelineAccess?: string[];
 }
 
 export interface LoginOptions {
@@ -29,11 +31,13 @@ export interface LoginOptions {
   useConsciousnessTransfer?: boolean;
   useDimensionalPortal?: boolean;
   useRealityManipulation?: boolean;
+  useMultiverseAuth?: boolean;
+  useTimeVarianceAuthority?: boolean;
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 
-  console.log('[Feature Infinity] Reality manipulation auth for:', email);
-  return { id: '1', email, roles: ['infinity'], isVerified: true }; 
+  console.log('[Feature Multiverse] TVA-approved variant auth for:', email);
+  return { id: '1', email, roles: ['multiverse'], isVerified: true }; 
 }
 
 export function redirectAfterLogin(returnUrl: string = '/home') { 

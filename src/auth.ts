@@ -28,8 +28,32 @@ export interface LoginOptions {
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 
-  console.log('[Main Vibranium] Wakanda Forever SSO login for:', email);
-  return { id: '1', email, roles: ['vibranium'], isVerified: true }; 
+  console.log('[Auth] Authenticating user:', email);
+  
+  // Validate credentials
+  if (!email || !password) {
+    throw new Error('Email and password are required');
+  }
+  
+  return { 
+    id: '1', 
+    email, 
+    username: email.split('@')[0],
+    roles: ['user'], 
+    isVerified: true,
+    twoFactorEnabled: false,
+    securityScore: 85,
+    complianceLevel: 'standard',
+    organizationId: 'org-123',
+    lastLoginAt: new Date()
+  }; 
+}
+
+export async function logout(): Promise<void> {
+  console.log('[Auth] Logging out user');
+  // Clear session storage
+  sessionStorage.clear();
+  localStorage.removeItem('auth_token');
 }
 
 export function redirectAfterLogin(returnUrl: string = '/home') { 

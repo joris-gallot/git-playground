@@ -1,6 +1,4 @@
-// Authentication module v21 - MAIN VIBRANIUM EDITION  
-// Vibranium ultimate - February 20, 2026 - MAIN VIBRANIUM CONFLICTING
-
+import type { User, LoginOptions } from './auth';
 export interface User { 
   id: string; 
   email: string; 

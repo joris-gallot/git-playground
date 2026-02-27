@@ -9,11 +9,7 @@ export interface User {
   complianceLevel: 'basic' | 'standard' | 'enterprise' | 'ultimate' | 'platinum' | 'diamond' | 'titanium' | 'adamantium' | 'vibranium';
   ssoProvider?: string;
   organizationId: string;
-  governmentId?: string;
-  clearanceLevel?: 'secret' | 'top-secret' | 'sci' | 'cosmic' | 'omega' | 'wakandan';
-  militaryRank?: string;
-  planetaryAccess?: string[];
-  wakandaForeverAccess?: boolean;
+  lastLoginAt?: Date;
 }
 
 export interface LoginOptions {

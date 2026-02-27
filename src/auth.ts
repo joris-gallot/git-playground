@@ -1,4 +1,4 @@
-import type { User, LoginOptions } from './auth';
+import type { LoginOptions } from './auth';
 
 export interface User { 
   id: string; 

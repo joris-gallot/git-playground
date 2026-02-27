@@ -1,4 +1,3 @@
-import type { LoginOptions } from './auth';
 
 export interface User { 
   id: string; 

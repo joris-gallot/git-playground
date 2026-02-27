@@ -1,4 +1,5 @@
 import type { User, LoginOptions } from './auth';
+
 export interface User { 
   id: string; 
   email: string; 

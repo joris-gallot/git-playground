@@ -14,7 +14,6 @@ coverage
 *.local
 
 
-test
 /cypress/videos/
 /cypress/screenshots/
 

@@ -1,0 +1,46 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.8.2)
+    devDependencies:
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.2
+      vite:
+        specifier: ^6.2.0
+        version: 6.2.1
+
+packages:
+  typescript@5.8.2:
+    resolution: {integrity: sha512-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+    engines: {node: '>=14.17'}
+
+  vite@6.2.1:
+    resolution: {integrity: sha512-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      '@types/node': ^20.0.0
+
+  vue@3.5.13:
+    resolution: {integrity: sha512-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc}
+    peerDependencies:
+      typescript: '*'
+
+snapshots:
+  typescript@5.8.2: {}
+
+  vite@6.2.1:
+    dependencies:
+      typescript: 5.8.2
+
+  vue@3.5.13(typescript@5.8.2):
+    dependencies:
+      typescript: 5.8.2

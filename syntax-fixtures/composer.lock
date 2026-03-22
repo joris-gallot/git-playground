@@ -1,0 +1,22 @@
+{
+  "_readme": [
+    "This file locks the dependencies of your project to a known state"
+  ],
+  "content-hash": "8b6d65f55f3e8f29f2d0f0f0d7e0e0aa",
+  "packages": [
+    {
+      "name": "monolog/monolog",
+      "version": "3.7.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Seldaek/monolog.git",
+        "reference": "7d54f4e1e2f1d16f9fabc1234def567890abcdef"
+      },
+      "require": {
+        "php": ">=8.1",
+        "psr/log": "^2.0 || ^3.0"
+      }
+    }
+  ],
+  "plugin-api-version": "2.6.0"
+}

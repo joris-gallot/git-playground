@@ -1,0 +1,5 @@
+{
+  "name": "reviu",
+  "private": true,
+  "features": ["git", "github", "billing"]
+}

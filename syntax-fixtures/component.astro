@@ -1,0 +1,10 @@
+---
+const title = 'Astro card';
+const links = ['Docs', 'Blog', 'API'];
+---
+<section class="hero">
+  <h1>{title}</h1>
+  <ul>
+    {links.map((link) => <li>{link}</li>)}
+  </ul>
+</section>

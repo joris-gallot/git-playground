@@ -1,0 +1,8 @@
+$accent: #0f766e;
+
+.card {
+  color: $accent;
+  &:hover {
+    color: lighten($accent, 10%);
+  }
+}

@@ -1,0 +1,6 @@
+name = "reviu"
+version = "0.1.0"
+
+[server]
+port = 3000
+enabled = true

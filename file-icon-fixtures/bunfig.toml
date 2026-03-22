@@ -1,5 +1,1 @@
-[install]
-exact = true
-
-[test]
-coverage = true
+telemetry = false

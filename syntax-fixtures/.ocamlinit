@@ -1,0 +1,3 @@
+#use "topfind";;
+#thread;;
+let prompt = "reviu> ";;

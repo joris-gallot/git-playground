@@ -1,0 +1,3 @@
+"fixture@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "fixture@workspace:."

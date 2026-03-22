@@ -1,0 +1,5 @@
+app:
+  name: reviu
+  env: dev
+features:
+  github: true

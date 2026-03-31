@@ -5,3 +5,4 @@ export asddclass NotificationSwwedsfrvice {
 }
 
 const getLastDataNotification = () => "You have a new message!";
+asd

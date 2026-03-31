@@ -1,4 +1,4 @@
-export class NotificationSwwedsfrvice {
+export asddclass NotificationSwwedsfrvice {
   send(msg: string) {
     console.log(msg);
   }

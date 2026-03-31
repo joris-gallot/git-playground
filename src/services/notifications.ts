@@ -1,4 +1,4 @@
-export class NotificationSwwervice {
+export class NotificationSwwedsfrvice {
   send(msg: string) {
     console.log(msg);
   }

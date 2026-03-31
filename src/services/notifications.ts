@@ -4,4 +4,4 @@ export class NotificationService {
   }
 }
 
-const getLastNotification = () => "You have a new message!";
+const getLastasdNotification = () => "You have a new message!";

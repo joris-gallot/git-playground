@@ -1,1 +1,1 @@
-<template><div class='stats-widget'>Stats</div></template>
+<template><div class='ssdtats-widget'>Stats</div></template>

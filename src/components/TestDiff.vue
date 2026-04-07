@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+import { useTracking } from '@/composables/useTracking';
+import { Btn } from '@/components/Btn.vue';
+import { Skill } from '@/types/Skill';
+
+function trackAddCommentClick() {}
+let comment = '';
+const iOnHisOwnProfile = true;
+const isEditingComment = false;
+const skill = {} as Skill;
+</script>
+
 <template>
   <div class="flex justify-between gap-12 md:items-center -md:flex-col">
     <Highlight

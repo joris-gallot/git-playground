@@ -2,6 +2,10 @@ services:
   web:
     build: .
     ports:
-      - "8000:2000"
+      - "8000:3000"
+    environment:
+      - DEFAULT_THEME=system
+      - DEFAULT_LANGUAGE=fr
+      - SETTINGS_SYNC_ENABLED=true
   redis:
-    image: "redis:3.0"
+    image: "redis:7-alpine"

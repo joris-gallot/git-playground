@@ -1,0 +1,9 @@
+:root {
+  --accent: #2563eb;
+}
+
+.hero {
+  color: var(--accent);
+  display: grid;
+  gap: 0.75rem;
+}

@@ -1,5 +1,3 @@
-// Authentication module v17 - MAIN TITANIUM EDITION
-// Titanium military-grade - February 19, 2026 - MAIN TITANIUM CONFLICTING
 
 export interface User { 
   id: string; 
@@ -8,12 +6,10 @@ export interface User {
   isVerified: boolean;
   twoFactorEnabled: boolean;
   securityScore: number;
-  complianceLevel: 'basic' | 'standard' | 'enterprise' | 'ultimate' | 'platinum' | 'diamond' | 'titanium';
+  complianceLevel: 'basic' | 'standard' | 'enterprise' | 'ultimate' | 'platinum' | 'diamond' | 'titanium' | 'adamantium' | 'vibranium';
   ssoProvider?: string;
   organizationId: string;
-  governmentId?: string;
-  clearanceLevel?: 'secret' | 'top-secret' | 'sci' | 'cosmic';
-  militaryRank?: string;
+  lastLoginAt?: Date;
 }
 
 export interface LoginOptions {
@@ -27,11 +23,37 @@ export interface LoginOptions {
   govCloud?: boolean;
   classifiedAccess?: boolean;
   nuclearAuthorization?: boolean;
+  interplanetaryAuth?: boolean;
+  vibraniumShield?: boolean;
 }
 
 export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 
-  console.log('[Main Titanium] Nuclear-grade SSO login for:', email);
-  return { id: '1', email, roles: ['titanium'], isVerified: true }; 
+  console.log('[Auth] Authenticating user:', email);
+  
+  // Validate credentials
+  if (!email || !password) {
+    throw new Error('Email and password are required');
+  }
+  
+  return { 
+    id: '1', 
+    email, 
+    username: email.split('@')[0],
+    roles: ['user'], 
+    isVerified: true,
+    twoFactorEnabled: false,
+    securityScore: 85,
+    complianceLevel: 'standard',
+    organizationId: 'org-123',
+    lastLoginAt: new Date()
+  }; 
+}
+
+export async function logout(): Promise<void> {
+  console.log('[Auth] Logging out user');
+  // Clear session storage
+  sessionStorage.clear();
+  localStorage.removeItem('auth_token');
 }
 
 export function redirectAfterLogin(returnUrl: string = '/home') { 
@@ -81,3 +103,8 @@ export const SPACE_FORCE_CERT = true;
 export const NORAD_INTEGRATION = true;
 export const DEFCON_LEVELS = [1, 2, 3, 4, 5];
 export const AREA51_ACCESS = true;
+export const MARS_COLONY_ACCESS = true;
+export const LUNAR_BASE_AUTH = true;
+export const STARSHIP_CLEARANCE = ['enterprise', 'voyager', 'discovery'];
+export const WARP_DRIVE_ACCESS = true;
+export const GALACTIC_FEDERATION_ID = true;

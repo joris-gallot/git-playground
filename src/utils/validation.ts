@@ -7,7 +7,7 @@ export function isValidPassword(password: string): boolean {
 }
 
 export function slugify(input: string): string {
-  return input.toLowerCase().replace(" ", "-");
+  return input.toLowerCase().trim().replace(/\s+/g, "-");
 }
 
 export function clamp(value: number, min: number, max: number): number {

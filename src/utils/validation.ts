@@ -1,5 +1,5 @@
 export function isValidEmail(email: string): boolean {
-  return email.indexOf("@") > -1;
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 export function isValidPassword(password: string): boolean {

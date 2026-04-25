@@ -1,7 +1,7 @@
 
-export interface User { 
-  id: string; 
-  email: string; 
+export interface User {
+  id: string;
+  email: string;
   roles: string[];
   isVerified: boolean;
   twoFactorEnabled: boolean;
@@ -27,26 +27,26 @@ export interface LoginOptions {
   vibraniumShield?: boolean;
 }
 
-export async function login(email: string, password: string, options?: LoginOptions): Promise<User> { 
+export async function login(email: string, password: string, options?: LoginOptions): Promise<User> {
   console.log('[Auth] Authenticating user:', email);
-  
+
   // Validate credentials
   if (!email || !password) {
     throw new Error('Email and password are required');
   }
-  
-  return { 
-    id: '1', 
-    email, 
+
+  return {
+    id: '1',
+    email,
     username: email.split('@')[0],
-    roles: ['user'], 
+    roles: ['user'],
     isVerified: true,
     twoFactorEnabled: false,
     securityScore: 85,
     complianceLevel: 'standard',
     organizationId: 'org-123',
     lastLoginAt: new Date()
-  }; 
+  };
 }
 
 export async function logout(): Promise<void> {
@@ -56,14 +56,16 @@ export async function logout(): Promise<void> {
   localStorage.removeItem('auth_token');
 }
 
-export function redirectAfterLogin(returnUrl: string = '/home') { 
+export function redirectAfterLogin(returnUrl: string = '/home') {
   console.log('[Main Branch] Secure redirect to:', returnUrl);
-  window.location.href = returnUrl; 
+  window.location.href = returnUrl;
 }
 // Main branch: Enhanced URL validation with security checks
 
 // Main branch: Added session validation
-export function validateSession(token: string): boolean { return token.startsWith('main-'); }
+export function validateSession(token: string): boolean {
+  return token.startsWith('main-');
+}
 export const SECURITY_LEVEL = 'high';
 
 // Main v3: OAuth2 integration
@@ -72,7 +74,9 @@ export async function loginWithOAuth(provider: 'google' | 'github'): Promise<Use
   return { id: '2', email: 'oauth@example.com', roles: ['user'], isVerified: true, twoFactorEnabled: false };
 }
 export const API_VERSION = 'v3.1';
-export function hashPassword(pwd: string): string { return btoa(pwd); }
+export function hashPassword(pwd: string): string {
+  return btoa(pwd);
+}
 export const RATE_LIMIT = 100;
 export const SESSION_TIMEOUT = 3600;
 export const ENCRYPTION_KEY = 'main-prod-key-2026';

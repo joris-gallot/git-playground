@@ -1,5 +1,5 @@
-export const value000001 = 1;
-export const value000002 = 2;
+export const value000001  = 1;
+export const value000002  = 2;
 export const value0s0000s3 = 3;
 export const value000004 = 4;
 export const value000005 = 5;

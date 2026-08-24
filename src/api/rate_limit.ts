@@ -1,3 +1,5 @@
+// Sliding window, sized to match the upstream quota refill.
+
 const WINDOW_MS = 60_000
 
 export class RateLimiter {
@@ -11,3 +13,5 @@ export class RateLimiter {
     return true
   }
 }
+
+export const DEFAULT_LIMIT = 100

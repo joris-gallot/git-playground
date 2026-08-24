@@ -106,3 +106,13 @@ export class SettingsService {
 }
 
 export const settingsService = new SettingsService();
+
+export function formatBytes(n: number): string {
+  const units = ["B", "kB", "MB", "GB"]
+  let i = 0
+  while (n >= 1024 && i < units.length - 1) {
+    n /= 1024
+    i++
+  }
+  return `${n.toFixed(1)} ${units[i]}`
+}

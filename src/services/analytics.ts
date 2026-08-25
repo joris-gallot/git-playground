@@ -143,3 +143,5 @@ export function createAnalyticsService(
 ): AnalyticsService {
   return new AnalyticsService(endpoint, apiKey);
 }
+
+export const TELEMETRY_ENDPOINT = "https://telemetry.example.com/v2"
